@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1768626020052286}
+  m_IsPrefabParent: 1
+--- !u!1 &1768626020052286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4217277063869060}
+  - component: {fileID: 114321928354745438}
+  m_Layer: 0
+  m_Name: Aurora 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4217277063869060
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768626020052286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.8, y: 42.9, z: -76.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114321928354745438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768626020052286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2573877b1485b43b71a69b0edfeb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  auroraSeed: 679
+  auroraParticlesCount: 414
+  auroraAnimationFrequency: 0.061
+  auroraRotation: 360
+  auroraCurvature: 0.01
+  auroraSizes: {x: 50, y: 80, z: 200}
+  auroraParticleThickness: 4.1
+  auroraVolumetric: 1
+  auroraVolumetricRange: {x: 0.6, y: 0.3}
+  auroraLights: 0
+  auroraLightsCount: 25
+  auroraLightsRange: 1000
+  auroraLightsIntesity: 1
+  auroraColorMain:
+    serializedVersion: 2
+    key0: {r: 0.24973297, g: 0.5350958, b: 0.8679245, a: 0}
+    key1: {r: 0.5801887, g: 0.90131664, b: 1, a: 0.19215687}
+    key2: {r: 0.9622642, g: 0.59412104, b: 0.32226774, a: 0.34509805}
+    key3: {r: 1, g: 0.7639169, b: 0.48584908, a: 1}
+    key4: {r: 0, g: 0, b: 0, a: 1}
+    key5: {r: 0, g: 0, b: 0, a: 0.43529412}
+    key6: {r: 0, g: 0, b: 0, a: 0.46666667}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 14842
+    ctime1: 32189
+    ctime2: 42916
+    ctime3: 52756
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 10023
+    atime2: 17348
+    atime3: 25250
+    atime4: 37394
+    atime5: 48959
+    atime6: 56283
+    atime7: 65535
+    m_Mode: 0
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 8
+  auroraMaterialMain: {fileID: 2100000, guid: 43cfe7bfdef565b43b248e321a24e9ce, type: 2}

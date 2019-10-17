@@ -1,0 +1,71 @@
+#N canvas 307 159 845 662 10;
+#X declare -path crater;
+#X obj 23 35 cnv 30 800 600 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#N canvas 141 335 359 110 shrine 0;
+#X obj 10 50 declare -path crater;
+#X text 11 24 declares path for abstractions;
+#X restore 32 67 pd shrine;
+#X text 22 446 < primary patch;
+#X obj 668 336 cnv 30 1 1 empty empty controlMap 20 12 0 16 -228856
+-99865 0;
+#X obj 432 586 cnv 30 1 1 empty empty UnityPD 20 12 0 32 -228856 -162280
+0;
+#X text 614 572 by wo3 \; • usage: CC \, BY \; • no warranties
+\; • contact: werle.kyle@gmail.com \;;
+#X obj 512 94 cnv 30 1 1 empty empty voidpulse 20 12 0 32 -228856 -162280
+0;
+#X obj 512 57 cnv 30 1 1 empty empty SURGE 20 12 0 48 -228856 -99865
+0;
+#X obj 671 424 cnv 30 1 1 empty empty 0-1-floatInputs 20 12 0 12 -228856
+-99865 0;
+#X obj 247 484 master;
+#N canvas 508 156 200 323 burn 0;
+#X obj 23 114 noise~;
+#X obj 96 52 loadbang;
+#X msg 125 87 0.6;
+#X obj 23 219 clip~ -1 1;
+#X obj 55 18 inlet~;
+#X obj 23 284 outlet~;
+#X obj 48 87 *~ 150;
+#X obj 23 198 *~ 120;
+#X obj 23 177 hip~ 120;
+#X obj 48 66 *~;
+#X obj 23 135 bp~ 8000 0.5;
+#X obj 54 240 *~ 12000;
+#X msg 96 87 1;
+#X obj 23 156 vcf~ 0 1;
+#X obj 23 263 vcf~ 0 0.6;
+#X connect 0 0 10 0;
+#X connect 1 0 2 0;
+#X connect 1 0 12 0;
+#X connect 2 0 14 2;
+#X connect 3 0 14 0;
+#X connect 4 0 9 0;
+#X connect 4 0 9 1;
+#X connect 4 0 11 0;
+#X connect 6 0 13 1;
+#X connect 7 0 3 0;
+#X connect 8 0 7 0;
+#X connect 9 0 6 0;
+#X connect 10 0 13 0;
+#X connect 11 0 14 1;
+#X connect 12 0 13 2;
+#X connect 13 0 8 0;
+#X connect 14 0 5 0;
+#X restore 321 557 pd burn;
+#X obj 321 536 line~;
+#X obj 324 496 hsl 64 12 0.01 1 0 0 empty empty speed 16 6 1 8 -262144
+-1 -1 0 1;
+#X obj 321 474 r JetSpeed;
+#X obj 321 601 *~ 0.02;
+#X msg 321 515 \$1 553;
+#X obj 321 581 lop~ 1000;
+#X connect 10 0 16 0;
+#X connect 11 0 10 0;
+#X connect 12 0 15 0;
+#X connect 13 0 12 0;
+#X connect 14 0 9 0;
+#X connect 14 0 9 1;
+#X connect 15 0 11 0;
+#X connect 16 0 14 0;
